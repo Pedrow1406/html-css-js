@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esse é o meu primeiro site">
+    <meta name="keywords" content="programação">
+    <meta name="author" content="Pedro Henrique de Melo Fontele">
+        <title>Learn HTML</title>
+</head>
+<body>
+    <h1>Titulo h1</h1>
+    <h2>Titulo h2</h2>
+    <h3>Titulo h3</h3>
+    <h4>Titulo h4</h4>
+    <h5>Titulo h5</h5>
+    <h6>Titulo h6</h6>
+    <p>Essa é a tag hr ela serve pra criar uma linha horizontal</p>
+    <hr>
+    <p>Essa é a tag <strong>strong</strong> ela serve para deixar o texto em negrito e dar uma importancia a ele</p>
+    <p>Essa é a tag <em>EM</em> ela serve para deixar o texto em italico e tem semantica</p>
+    <p>Essa é a tag br<br> usada pra quebrar linha</p>
+    <p>A tag <ins>ins</ins> serve para deixar o texto sublinhada e tem semantica</p> <p>A tag <del>Del</del> serve para descartar uma mensagem</p>
+    <p>A tag Sup serve pra criar um texto sobrescrito Ex: 5<sup>73</sup></p>
+    <p>A tag Sub serve para criar um texto subscrito Ex:H<sub>2</sub>O</p>
+    <p>A tag <mark>Mark</mark> serve para criar um texto marcado</p>
+    <p>A tag <code>CODE</code>  serve para deixar a fonte da letra monoespaçadas ou seja todas as letras tem o mesmo espaço e geralmente é usada para definir codigo</p>
+    <p>A tag Pre serve para definir um texto pre-formatado ou seja o texto sera exibido exatamente como esta escrito no codigo-fonte incluindo espaços em branco, quebra de linha.<br> O exemplo esta logo abaixo:</p>
+    <pre>
+        <code>
+            num = int(input('Digite um número'))
+            if num % 2 == 0:
+                print(f'0 numero {num} é PAR)
+            else:
+                print(f'0 número {num} é IMPAR)
+            print ('Fim do Programa')
+        </code>
+    </pre>
+    <hr>
+    <h2>Citações</h2>
+    <p>A tag <q>q</q> serve para colocar a palavra entre aspas para citação simples e é semantica</p>
+    <p>A tag blockquote desloca o texto para direita para indicar citação</p>
+    <blockquote cite="https://www.pensador.com/frases_de_maquiavel/">Todos veem o que você parece ser, mas poucos sabem o que você realmente é</blockquote>
+    <p>A tag <cite>cite</cite> é usada para definir o titulo da obra ou autor da qual a citação foi retirada geralmente em conjunto com a tag q ou blockquote</p>
+    <hr>
+    <h2>Abreviação</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+    <hr>
+    <H2>Lista Ordenada</H2>
+    <h3>Rotina Diária</h3>
+    <ol> <!--Listas Ordenadas-->
+        <li>Acordar</li> <!--item da lista -->
+        <li>Tomar Cafe</li> <!--item da lista -->
+        <li>Estudar Programação</li> <!--item da lista -->
+        <li>Ir pra Escola</li> <!--item da lista -->
+        <li>Estudar Programação</li> <!--item da lista -->
+        <li>Dormir</li> <!--item da lista -->
+    </ol>
+    <h2>Lista Nao Ordenada</h2>
+    <h3>Linguagens que pretendo Aprender</h3>
+    <ul type="square"> <!--formato do mark da list unordered
+    -->
+        <li>php</li>
+        <li>Phyton</li>
+        <li>JavaScript</li>
+        <li>Lua</li>
+    </ul>
+    <hr>
+    <h2>Listas Mistas</h2>
+    <h3>Coisas que eu Amo ou odeio em Python</h3>
+    <ol>
+        <li><strong>Amo</strong></li>
+        <ol type="a">
+            <li>POO</li>
+            <li>Listas</li>
+            <li>Condicionais</li>
+            <li>Loops</li>
+            <li>Funcoes</li>
+        </ol>
+        <li><strong>Odeio</strong></li>
+        <ol type ='a' start="6">
+            <li>Lambda</li>
+            <li>Cores</li>
+            <li>Dicionario</li>
+            <li>Funcao Recursiva</li>
+        </ol>
+    </ol>
+    <h3>Meus Jogos Favoritos</h3>
+    <ol>
+        <li>PlayStation</li>
+        <ul type ="square">
+            <li>God of War</li>
+            <li>Mortal Kombat Armagedon</li>
+            <li>Gta SA</li>
+            <li>Bully</li>
+        </ul>
+        <li>Nitendo</li>
+        <ul type ="square">
+            <li>Marios Bros</li>
+            <li>Zelda</li>
+        </ul>
+        <li>PC</li>
+        <ul type ="square">
+            <li>Dead By Daylight</li>
+            <li>Hollow Knight</li>
+            <li>Fortnite</li>
+            <li>Counter Strike</li>
+            <li>Minecraft</li>
+        </ul>
+    </ol>
+    <hr>
+    <h2>Listas de Definição</h2>
+    <dl> <!--Lista de Definicão-->
+        <dt>HTML</dt> <!--TERMO da Lista de Definição-->
+        <dd>Linguagem de Marcação para estrutura do Site</dd> <!--Descrição da lista de Definicão-->
+        <dt>CSS</dt>
+        <dd>Linguagem de Estilização para o Desining do Site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguaguem de Programação para a Interatividade do Site</dd>
+    </dl>
+    <hr>
+    <h2>Links Externos</h2>
+    <p>Canal do youtube(_blank): <a href="https://www.youtube.com/@CursoemVideo" target="_blank" rel="external">Canal Curso em Video</a></p>
+    <p>Voce tambem pode acessar o Instagram(_blank): <a href="https://www.instagram.com/gustavoguanabara/" target="_blank">Gustavo Guanabara</a></p>
+    <hr>
+    <h2>Links Internos</h2>
+    <p>Esta é a Primeira Pagina do Seu Site. <br>
+        Acesse tambem a Segunda pagina (exercicios) <a href="pag2.html">Segunda Pagina</a><br>
+        Acessa tambem a Terceira pagina (outra pasta): <a href="Pagina 03/pag3.html">Terceira Pagina</a>
+    </p>
+    <hr>
+    <h2>Links Download</h2>
+    <p>Link para Baixar um Livro Introduzindo ao Python: <a href="Links Download/LivroPython.pdf"Download="Aprenda Python.pdf">Livro Python</a></p>
+    <hr>
+    <h2>Imagens</h2>
+    <p><a href="cev Imagens/indeximg.html">Clique Aqui </a> para Acessar a pagina de Imagens</p>
+    <hr>
+    <h2>Audio</h2>
+    <p>Aqui esta um exemplo de audio em html</p>
+    <audio preload="none"controls loop>
+        <source src="cev Audios/noindication.mp3" type="audio/mpeg">
+        <source src="cev Audios/noindication.mp3" type="audio/ogg">
+        <source src="cev Audios/noindication.mp3" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir audio <a href="cev Audios/noindication.mp3"></a></p>
+    </audio>
+    <hr>
+    <h2>Videos Hospedados Localmente</h2>
+    <p>Esse video esta hospedado no meu proprio servidor</p>
+    <video controls poster="cev Imagens/Programação Imagens/carronovo.jpg" preload="none" height="200" width="200">
+        <source src="cev Videos/carro-viagem.mp4" type="video/mp4">
+    </video>
+    <hr>
+    <h2>Videos Externos(Incorporar)</h2>
+    <h3>Inserindo Video do Youtube:</h3>
+    <iframe width="350" height="215" src="https://www.youtube.com/embed/LW0bhKitRBk?si=zNhi5kMB9hRu6MTF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <hr>
+</body>
+</html>

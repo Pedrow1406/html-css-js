@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Dinamica</title>
+</head>
+<body>
+    <h1>Imagem Dinamica</h1>
+    <p>Tem abrir esse site em vários dispositivos ou simplesmente diminua o tamanho do seu navegador
+    </p>
+    <p>Volte pra pagina Imagens: <a href="../indeximg.html">Clique Aqui</a></p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="pequena.png"> <!--if Imagem <= 750: coloque a imagem pequena -->
+        <source media="(max-width:1050px )" srcset="media.png"> <!--if Imagem <= 1050: coloque a imagem media -->
+        <img src="grande.png" alt=""> <!--else: Coloque Imagem Grande-->
+    </picture>
+</body>
+</html>

@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+div{
+    background-color: lightgray;
+    text-align: center;
+        /*border = (grossura,tipo, cor)*/
+    border:1px solid black; /* (grossura,tipo, cor)*/
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+}
+
+div:hover{
+    background-color: rgb(101, 212, 101);
+}
+
+/* #d1{
+    background-color: blueviolet;
+}
+
+#d2{
+    background-color: aqua;
+}
+#d3{
+    background-color: blue;
+} */

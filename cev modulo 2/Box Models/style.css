@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/* Ordem do Margin e  do Padding
+top -> right -> bottom -> left
+*/
+/* Ordem do Outline e Border 
+
+width(espessura) -> style(tipo) -> color(cor)
+*/
+h1{ /* Box-Level */
+    background-color: lightgray;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    
+    border: 10px solid crimson;
+  
+    padding: 10px;
+
+    margin:20px auto 40px auto;
+
+    outline: 5px dashed darkblue;
+}
+
+
+a{  /* Inline-Level */
+    border: 10px solid red;
+    padding:10px;
+}

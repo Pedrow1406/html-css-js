@@ -1,0 +1,38 @@
+@charset "UTF-8";
+    /* Em HTML  o 'ID' é '#' em CSS (so pode 1 elemento)*/
+    /* Em HTML  a 'class' é '.' em CSS (pode vários elementos)*/
+body {
+    font-family: sans-serif;
+    background-image: linear-gradient(to right, #0FC2C0, #0CABA8, #008F8C, #015958, #023535);
+}
+
+h1{ 
+    color: #0c1729;
+    font-family: 'Courier New', Courier, monospace;
+}
+#principal{
+    background-color:#006B69;
+    color: #0d2b2ac5;
+    text-align: center;
+    font-size: 2.2em;
+}
+.basico{
+    color: rgba(12, 128, 12, 0.685);
+}
+.intermediario{
+    color: rgba(218, 218, 120, 0.925);
+}
+.avancado{
+    color: rgba(250, 75, 75, 0.795);
+}
+.destaque{
+    background-color: rgba(204, 204, 110, 0.801);
+}
+h2{
+    color: #154747;
+}
+
+p{
+    text-align: justify;
+    text-indent: 20px;
+}
