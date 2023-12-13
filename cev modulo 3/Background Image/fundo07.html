@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        :root{
+            --roxin: rgba(66, 9, 66, 0.658);
+            --azulzin: rgba(18, 214, 228, 0.829);
+        }
+        #container{
+            position: relative; /* O padrao é relative*/
+            background: var(--roxin) url('imagens/target001.png') center /100% 100% no-repeat;
+            height: 95vh;
+            padding: 10px;
+        }
+        #conteudo{
+            position: absolute;
+            background: var(--azulzin) url('imagens/target001.png') center /100% 100% no-repeat;
+            height: 200px;
+            width: 400px;
+            
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <!-- Sempre que voce for centralizar verticalmente você precisa de um container e de um conteudo -->
+    <section id="container">
+        <article id="conteudo"> 
+        </article>
+    </section>
+</body>
+</html>
