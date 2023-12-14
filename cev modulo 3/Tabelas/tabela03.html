@@ -16,11 +16,24 @@
             border: 1px solid black;
             padding: 8px;
         }
-        thead, tfoot{
+        thead{
+            background-color: rgba(0, 0, 0, 0.829);
+            color: white;
+        }
+        tfoot{
             background-color: rgba(128, 128, 128, 0.534);
         }
         .num{
             text-align: right;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: lightgrey;
+            padding: 10px;
+        }
+        #populacao{
+            width: 50px;
         }
     </style>
 </head>
@@ -29,19 +42,23 @@
     <!--
         Anatomia para Tabelas Grandes
         TABLE
-        THEAD
-            TR, TD, TH
-        TBODY
-            TR, TD, TH
-        TFOOT
-            TR, TD, TH
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
     -->
-
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <!-- col = coluna
+                     row = linha
+                 -->
+                <th scope="col">Estado</th>
+                <th scope="col" id="populacao">População</th>
             </tr>
         </thead>
         <tbody>
@@ -80,7 +97,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>136.465.223</strong></td>
             </tr>
         </tfoot>
