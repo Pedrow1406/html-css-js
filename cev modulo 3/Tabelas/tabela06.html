@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicício de Tabela</title>
+    <style>
+        :root{
+            --azulão: rgba(50, 50, 131, 0.788);
+            --redzin: rgba(255, 0, 0, 0.589);
+            --verdin: rgba(75, 185, 75, 0.733);
+        } 
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .destaque{
+            background-color: yellow;
+        }
+        .col_profissao{
+            background-color: var(--redzin);
+        }
+        .col_idade{
+            background-color: var(--verdin);
+        }
+        .col_sexo{
+            background-color: var(--azulão);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="col_nome">
+            <col class="col_sexo">
+            <col class="col_idade"> 
+            <col class="col_profissao">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr >
+                <td  class="destaque">Pedro Henrique</td>
+                <td>M</td>
+                <td>19</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Massiele</td>
+                <td>F</td>
+                <td>18</td>
+                <td>Nutricionista</td>
+            </tr>
+            <tr>
+                <td>Gustavo</td>
+                <td>M</td>
+                <td>42</td>
+                <td>Professor</td>
+            </tr>
+            <tr>
+                <td>Lucas</td>
+                <td>M</td>
+                <td>12</td>
+                <td>Estudante</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
