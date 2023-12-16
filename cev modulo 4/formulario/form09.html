@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        .botoes{
+            margin-top: 20px;
+        }
+        div{
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exibindo o Numero no Input Range</h1>
+    <form action="cadastro.php" method="get">
+        <div>
+            <label for="ivol">Volume: </label>
+            <input type="range" name="vol" id="ivol" oninput="imostrar.innerHTML = Number(ivol.value)" value="50">
+            <output id="imostrar">50</output>
+        </div>
+        <div class="botoes">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>

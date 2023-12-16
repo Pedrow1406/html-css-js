@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        .botoes{
+            margin-top: 20px;
+        }
+        div{
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculador de Idade</h1>
+    <form action="cadastro.php" method="get">
+        <div>
+            <label for="iano">Em que ano voce nasceu? </label>
+            <input type="number" name="ano" id="iano" oninput="calcIdade()">
+        </div>
+        <div>
+            <label for="idade">Você tem </label>
+            <output id="idade">0</output>
+            <label for="idade">anos</label>
+        </div>
+        <div class="botoes">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+    <script>
+        function calcIdade(){
+            let atual = new Date().getFullYear()
+            idade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+</body>
+</html>
