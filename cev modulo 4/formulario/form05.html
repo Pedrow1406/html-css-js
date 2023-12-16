@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        .botoes{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php">
+        <fieldset>
+            <!-- Radio voce so consegue marcar 1  -->
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="masc" checked value="M"><label for="masc">Masculino</label>
+            <input type="radio" name="sexo" id="fem" value="F"><label for="fem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <!-- Checkbox voce consegue marcar varios -->
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esporte" id="futebol" value="futebol"> <label for="futebol">Futebol</label>
+            <input type="checkbox" name="esporte" id="basquete" value="basquete"> <label for="basquete">Basquete</label>
+            <input type="checkbox" name="esporte" id="nataçao" value="nataçao" checked> <label for="nataçao">Natação</label>
+            <input type="checkbox" name="esporte" id="tenis" value="tenis"> <label for="tenis">Tênis</label>
+        </fieldset>
+        <div class="botoes">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
