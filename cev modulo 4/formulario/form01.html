@@ -13,7 +13,13 @@
 <body> 
     <h1>Meu primeiro formulário</h1>
     <!-- autocomplete off serve para nao sugerir mensagem no navegador -->
-    <form action="cadastro.php" autocomplete="off">
+    
+    <!-- Methods Formulario
+        GET é o metodo padrao de formulário
+        GET = deixa os dados do formulário visiveis na url
+        POST = oculta os dados do formulário na url
+    -->
+    <form action="cadastro.php" autocomplete="off" method="post">
         <p><label for="inome">Nome:</label> 
             <input type="text" name="nome" id="inome">
         </p>
