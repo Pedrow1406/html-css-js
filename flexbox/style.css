@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+.container{
+    background-color: gray;
+    max-width: 600px;
+    height: 600px;
+    border: 2px solid red;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.item{
+    background-color: rgba(35, 197, 197, 0.507);
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+}
+.container2{
+    background-color: gray;
+    max-width: 600px;
+    height: 600px;
+    border: 2px solid red;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.box{
+    background-color: rgba(35, 197, 197, 0.507);
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    height: 100px;
+    /* Shorthand do flex
+    grow -> shrink -> basis
+
+    grow é o quanto vai aumentar em relação aos outros itens
+
+    shrink é o quanto vai encolher em relação aos outros itens
+
+    basis é o tamanho inicial de um item flexivel
+    */
+    flex: 1 1 100px;
+}
+#item1{
+    order: 3;
+    flex-grow: 5;
+} 
+#item2{
+    order: 1;
+}
