@@ -28,6 +28,7 @@ html{
     display: flex;
     flex-direction: row;
     background-color: rgb(97, 94, 94);
+    width: 100%;
     padding: 5px;
     justify-content: flex-start;
 }
