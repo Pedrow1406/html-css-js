@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none ;
+    font-family: Arial;
+    font-size: 1.2rem;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.header{
+    background-color:  black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+
+    margin-left: 10px;
+}
+.menu li a {
+    display: block;
+    padding: 10px;
+    background-color: tomato;
+}
+.menu li a:hover{
+    background-color: rgb(80, 30, 21);
+}
