@@ -1,41 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="calculadora">
             <div class="calculo">
                 <form action="" method="get">
-                    <input type="number" name="num" id="inum" placeholder="I">
+                    <input disabled id="inum" placeholder="I">
                 </form>
             </div>
-            <button class="items limpar">C</button>
-            <button class="items operador">( )</button>
-            <button class="items operador">%</button>
-            <button class="items operador">/</button>
-            <button class="items">7</button>
-            <button class="items">8</button>
-            <button class="items">9</button>
-            <button class="items operador">x</button>
-            <button class="items">4</button>
-            <button class="items">5</button>
-            <button class="items">6</button>
-            <button class="items menos operador">--</button>          
-            <button class="items">1</button>
-            <button class="items">2</button>
-            <button class="items">3</button>
-            <button class="items operador">+</button>
-            <button class="items">+/-</button>
-            <button class="items">0</button>
-            <button class="items">.</button>
-            <button class="items igual">=</button>
+            <button onclick="limpar()" class="items limpar">C</button>
+            <button onclick="parenteses()" class="items operador">( )</button>
+            <button onclick="porcentagem('inum'); " class="items operador">%</button>
+            <button onclick="insertValue('/')" class="items operador">/</button>
+            <button onclick="insertValue('7')" class="items">7</button>
+            <button onclick="insertValue('8')" class="items">8</button>
+            <button onclick="insertValue('9')" class="items">9</button>
+            <button onclick="insertValue('*')" class="items operador">x</button>
+            <button onclick="insertValue('4')" class="items">4</button>
+            <button onclick="insertValue('5')" class="items">5</button>
+            <button onclick="insertValue('6')" class="items">6</button>
+            <button onclick="insertValue('-')" class="items menos operador">--</button>
+            <button onclick="insertValue('1')" class="items">1</button>
+            <button onclick="insertValue('2')" class="items">2</button>
+            <button onclick="insertValue('3')" class="items">3</button>
+            <button onclick="insertValue('+')" class="items operador">+</button>
+            <button onclick="muda_sinal()" class="items">+/-</button>
+            <button onclick="insertValue('0')" class="items">0</button>
+            <button onclick="insertValue('.')" class="items">,</button>
+            <button onclick="calcular()" class="items igual">=</button>
         </div>
     </div>
-    
+    <script>
+        function insertValue(num) {
+            const input = document.getElementById('inum').value
+            document.getElementById('inum').value = input + num
+        }
+        function calcular() {
+            const input = document.getElementById('inum').value
+            document.getElementById('inum').value = eval(input)
+        }
+        function limpar() {
+            const input = document.getElementById('inum').value
+            document.getElementById('inum').value = ' '
+        }
+        function muda_sinal() {
+            calcular()
+            const input = document.getElementById('inum').value
+            document.getElementById('inum').value = Number(input * -1)
+        }
+        function porcentagem() {
+            const input = document.getElementById('inum').value
+            document.getElementById('inum').value = Number(input / 100)
+        }
+        function parenteses() {
+            const input = document.getElementById('inum').value
+            if (input.includes('(')) {
+                document.getElementById('inum').value = input + ')'
+            }
+            else {
+                document.getElementById('inum').value = input + '('
+            }
+        }
+
+    </script>
+
+    <footer>
+        <div class="rodape" >
+            <p>Conteudo criado por @Pedrow1406</p>
+        </div>
+    </footer>
 </body>
+
 </html>

@@ -72,3 +72,17 @@ body{
 .operador{
     color: rgb(194, 96, 182);
 }
+footer{
+    display: flex;
+    align-items: flex-end;
+    height: 35vh;
+    color: white;
+    padding: 5px;
+}
+.rodape{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    padding: 10px;
+    width: 100vw;
+}
